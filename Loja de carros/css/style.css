@@ -1,0 +1,507 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Open+Sans:wght@600&family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap');
+
+/* reset css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto' , sans-serif;
+}
+
+:root {
+    --laranja: #f78b00;
+    --azul: #00285f;
+    --cinza: #ededed;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    max-width: 100%;
+    height: 500px;
+    background: var(--laranja);
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    color: var(--azul);
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #00285f83;
+}
+
+nav ul button {
+    border: 1px solid var(--azul);
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: var(--azul);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+nav ul button:hover {
+    background: var(--azul);
+    color: white;
+}
+
+.content .header-bloco {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background: var(--azul);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    position: relative;
+    padding: 10px;
+}
+
+.header-bloco img {
+    max-width: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.header-bloco .texto {
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+}
+
+.header-bloco .texto h2{
+    color: white; 
+    margin-bottom: 20px;
+    text-align: right;
+    transform: translateX(-20px);     
+}
+
+.header-bloco .texto p {
+    max-width: 280px;
+    color: rgba(255, 255, 255, 0.541);
+    text-align: right;
+    transform: translateX(7px); 
+}
+
+/*produtos catalogo*/
+
+section .catalogo {
+    width: 100vw;
+    padding: 100px;
+}
+
+section .card {
+    width: 980px;
+    height: 150px;
+    background: var(--cinza);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa {
+    width: 700px;
+    height: 50px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    text-indent: 10px;
+}
+
+.botao-procura {
+    width: 150px;
+    height: 50px;
+    border-radius: 0px 6px 0px 6px;
+    border: none;
+    background: #1d4680d2;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.2s ease;
+}
+
+.botao-procura:hover {
+    background: #dedede;
+    color: var(--azul);
+}
+
+.titulo-wrapper-catalogo {
+    margin-top: 200px;
+    padding-bottom: 20px;
+}
+
+section .card-wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding-top: 50px;
+}
+
+section .card-itens {
+    height: 400px;
+    background: var(--cinza);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-itens img {
+    width: 85%;
+}
+
+.card-itens h3 {
+    width: 90%;
+}
+
+.card-itens p {
+    width: 90%;
+    font-style: italic;
+    color: #00000070;
+}
+
+.card-itens button {
+    width: 90%;
+    padding: 15px 0px;
+    border: none;
+    background: #013174d7;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;  
+    margin-bottom: 10px;
+}
+
+.card-itens button:hover {
+    background: #dedede;
+    color: #013174d7;
+}
+
+/*Sobre*/
+
+.sobre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.sobre-content {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: #dedede7e;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    background: #0000001f;
+    border-radius: 8px;
+}
+
+.right {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 10%;
+}
+
+.right h3 {
+    text-align: right;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.right p {
+    max-width: 90%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+/*Caracteristicas*/
+
+.caracteristicas {
+    width: 100%;
+    height: 100%;
+    background: var(--cinza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.title-wrapper-caracteristicas {
+    padding: 20px 0px;
+}
+
+.caracteristicas-card-bloco {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10; 
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 30px;
+}
+
+.caracteristicas-card-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #e2dfdf73;
+    border-radius: 4px;
+}
+
+.caracteristicas-text-content {
+    max-width: 60%;
+    margin: 5px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 250px;
+}
+
+footer .main {
+    width: 100%;
+    height: 200px;
+    background: var(--laranja);
+    padding: 20px 10px;
+}
+
+.footer-link {
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-company,
+.footer-rental,
+.footer-contato,
+.footer-social {
+    color: rgba(255, 255, 255, 0.904);
+    height: 100%;
+    min-height: 100px;
+}
+
+.footer-link h4 {
+    margin-bottom: 10px;
+    
+}
+
+.footer-link h6 {
+    margin-bottom: 8px;
+}
+
+.main .footer-social img{
+    width: 32px;
+    height: 32px;
+}
+
+footer .last {
+    width: 100%;
+    height: 50px;
+    background: #042e66ef;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px)  {
+    .card {
+        max-width: 750px;
+    }
+
+    .caracteristicas-card-bloco {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        max-width: 360px;
+    }
+
+    footer h4 {
+        padding: 9px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    nav ul li {
+        display: none;
+    }
+
+    .header-bloco img {
+        width: 70%;
+        position: absolute;
+        right: 16%;
+        top: 30%;
+    }
+
+    .header-bloco .texto {
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+    }
+
+    section .card {
+        width: 390px;
+        padding: 0px 10px;
+    }
+
+
+    .pesquisa {
+         max-width: 700px;
+         min-width: 240px;
+    }
+
+    .botao-procura {
+        max-width: 150px;
+        min-width: 80px;
+    }
+
+    .sobre {
+        margin-top: 100px;
+    }
+
+    .titulo-wrapper-sobre {
+        margin-bottom: 20px;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 90%;
+    }
+       
+    .right p {
+        width: 100%;
+        margin: 0px;
+        text-align: left;
+    }
+
+    .caracteristicas {
+        height: 100%;
+    }
+
+    .caracteristicas-card-bloco {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    footer .main {
+        height: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        padding-left: 10%;
+    }
+}
+
+
+
+
+
